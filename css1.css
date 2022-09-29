@@ -1,0 +1,145 @@
+.da-top section.elementor-inner-section {
+    display: block !important;
+}
+
+div.da-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0;
+    padding: 0 15px;
+}
+
+div.da-section > div {
+    width: calc(50% - 1em);
+}
+
+#da-props .da-prop {
+    display: flex;
+    align-items: center;
+}
+
+#da-props .da-prop .da-img {
+    min-width: 124px;
+    max-width: 124px;
+    height: 124px;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+#da-props .da-prop .da-img img {
+    max-width: initial;
+    height: 100%;
+    width: auto;
+    display: block;
+}
+
+#da-props .da-prop .da-prop-txt {
+    flex-grow: 1;
+    padding-left: 5px;
+}
+
+#da-props .da-prop .da-prop-txt h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 2px;
+}
+
+#da-props .da-prop .da-prop-txt p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+div.da-section > div.da-img img {
+    display: block;
+    width: 100%;
+}
+
+#da-pain > div.da-img {
+    order: 2;
+}
+
+#da-pain h4 {
+    font-size: 28px;
+}
+
+#da-pain .da-checks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#da-pain .da-checks p {
+    width: 50%;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'DinCondensed-Bold';
+    margin-bottom: 10px;
+}
+
+#da-pain .da-checks p i {
+    font-family: 'Font Awesome 5 Free';
+    color: red;
+    font-weight: 600;
+    margin-right: 7px;
+}
+
+.da-reviews {
+    background-image: url(https://static.disruptive.co/contour-designs/people-imagery/relaxBG.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.da-reviews .da-rev {
+    background: rgb(241 241 241 / 85%);
+}
+
+@media screen and (max-width: 920px) {
+    div.da-section {
+        align-items: flex-start;
+    }
+    
+    #da-pain .da-checks p {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    div.da-section {
+        flex-wrap: wrap;
+        margin: 25px 0;
+    }
+    
+    div.da-section > div {
+        width: 100%;
+    }
+
+    div.da-section > div.da-img {
+        margin-bottom: 25px;
+    }
+
+    #da-pain > div.da-img {
+        order: initial;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #da-props .da-prop {
+        margin-bottom: 25px;
+        align-items: flex-start;
+    }
+
+    #da-props .da-prop .da-img {
+        min-width: 80px;
+        max-width: 80px;
+        height: 80px;
+    }
+
+    .da-reviews {
+        background-image: url(https://static.disruptive.co/contour-designs/people-imagery/relaxBG-M.jpg);
+    }
+}
